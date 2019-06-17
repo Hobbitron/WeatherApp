@@ -1,0 +1,6 @@
+mat-card {
+    display: inline-block;
+}
+.mat-list-item {
+    height: 22px !important;
+}

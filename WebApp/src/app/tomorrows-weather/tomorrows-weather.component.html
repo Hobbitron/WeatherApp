@@ -1,0 +1,12 @@
+<mat-card color="secondary">
+  <mat-card-title>
+    The forecast for tomorrow
+  </mat-card-title>
+  <img [src]="CurrentCity?.futureIcon[0]" />
+    <mat-list>
+        <mat-list-item>Temp: {{CurrentCity?.futureTemperature[0]}}</mat-list-item>
+        <mat-list-item>Max: {{CurrentCity?.futureMaxTemperature[0]}}</mat-list-item>
+        <mat-list-item>Min: {{CurrentCity?.futureMinTemperature[0]}}</mat-list-item>
+        <mat-list-item>Humidity: {{CurrentCity?.futureHumidity[0]}}%</mat-list-item>      
+      </mat-list>
+</mat-card>

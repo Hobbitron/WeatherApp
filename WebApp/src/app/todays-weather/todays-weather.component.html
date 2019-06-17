@@ -1,0 +1,14 @@
+<mat-card color="secondary">
+  <mat-card-title>
+    It is currently {{CurrentCity?.currentDescription}} in {{CurrentCity?.name}}
+  </mat-card-title>
+  <img [src]="CurrentCity?.currentIcon" />
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>Temp: {{CurrentCity?.currentTemperature}}</mat-list-item>
+      <mat-list-item>Max: {{CurrentCity?.currentMaxTemperature}}</mat-list-item>
+      <mat-list-item>Min: {{CurrentCity?.currentMinTemperature}}</mat-list-item>
+      <mat-list-item>Humidity: {{CurrentCity?.currentHumidity}}%</mat-list-item>      
+    </mat-list>
+  </mat-card-content>
+</mat-card>
